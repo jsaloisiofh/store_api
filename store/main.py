@@ -4,6 +4,7 @@ from store.core.config import settings
 from store.routers import api_router
 
 
+
 class App(FastAPI):
     def __init__(self, *args, **kwargs) -> None:
         super().__init__(

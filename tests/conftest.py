@@ -70,6 +70,7 @@ def products_in():
     return [ProductIn(**product) for product in products_data()]
 
 
+
 @pytest.fixture
 async def products_inserted(products_in):
     return [await product_usecase.create(body=product_in) for product_in in products_in]

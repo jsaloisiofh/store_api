@@ -24,6 +24,7 @@ def convert_decimal_128(v):
     return Decimal128(str(v))
 
 
+
 Decimal_ = Annotated[Decimal, AfterValidator(convert_decimal_128)]
 
 

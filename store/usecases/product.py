@@ -40,6 +40,7 @@ class ProductUsecase:
 
         return ProductUpdateOut(**result)
 
+
     async def delete(self, id: UUID) -> bool:
         product = await self.collection.find_one({"id": id})
         if not product:
